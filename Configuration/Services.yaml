@@ -1,0 +1,19 @@
+services:
+  W4Services\W4Cloudinary\EventListener\FileEventListener:
+    tags:
+      - name: event.listener
+        identifier: 'upload-file-to-cloudinary-after-add'
+        event: TYPO3\CMS\Core\Resource\Event\AfterFileAddedEvent
+        method: 'afterFileAddedEvent'
+      - name: event.listener
+        identifier: 'remove-file-from-cloudinary-after-delete'
+        event: TYPO3\CMS\Core\Resource\Event\AfterFileDeletedEvent
+        method: 'afterFileDeletedEvent'
+      - name: event.listener
+        identifier: 'rename-file-on-cloudinary-after-rename'
+        event: TYPO3\CMS\Core\Resource\Event\AfterFileRenamedEvent
+        method: 'afterFileRenamedEvent'
+      - name: event.listener
+        identifier: 'replace-file-on-cloudinary-after-replace'
+        event: TYPO3\CMS\Core\Resource\Event\AfterFileReplacedEvent
+        method: 'afterFileReplacedEvent'

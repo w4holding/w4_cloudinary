@@ -1,0 +1,23 @@
+# cat=account/1; type=string; label=Cloud name
+cloud_name =
+
+# cat=account/2; type=string; label=API key
+api_key =
+
+# cat=account/3; type=string; label=API secret
+api_secret =
+
+# cat=processing/1; type=boolean; label=Process image on the fly
+processing_on_the_fly = 1
+
+# cat=processing/2; type=boolean; label=Responsive by JavaScript
+processing_responsive = 1
+
+# cat=processing/3; type=boolean; label=Send the invalidate flag for all image operations
+invalidate_cdn_on_changes = 1
+
+# cat=processing/4; type=string; label=Separated by semicolon, user ip addresses for which Cloudinary won't be active
+exclude_ips =
+
+# cat=processing/5; type=options[auto,webp,png,jpg,gif]; label=Force images to be delivered in this format
+format =

@@ -1,0 +1,46 @@
+{
+    "name": "w4services/w4_cloudinary",
+    "type": "typo3-cms-extension",
+    "version": "1.0.0",
+    "description": "W4 API implementation and support for Cloudinary.",
+    "homepage": "https://www.w-4.com",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/w4holding/w4_cloudinary.git"
+        }
+    ],
+    "authors": [{
+        "name": "W4 Services GmbH",
+        "email": "info@w-4.com",
+        "role": "Developer"
+    }],
+    "license": [
+        "GPL-2.0-or-later"
+    ],
+    "config": {
+        "sort-packages": true
+    },
+    "require": {
+        "typo3/cms-core": "^11.5",
+        "cloudinary/cloudinary_php": "~1.19"
+    },
+    "autoload": {
+        "psr-4": {
+            "W4Services\\W4Cloudinary\\": "Classes/"
+        }
+    },
+    "support": {
+        "issues": "https://github.com/w4holding/w4_cloudinary/issues"
+    },
+    "replace": {
+        "typo3-ter/w4_cloudinary": "self.version"
+    },
+    "extra": {
+        "typo3/cms": {
+            "cms-package-dir": "{$vendor-dir}/typo3/cms",
+            "web-dir": ".Build/public",
+            "extension-key": "w4_cloudinary"
+        }
+    }
+}
