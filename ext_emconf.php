@@ -1,9 +1,9 @@
 <?php
 
 $EM_CONF[$_EXTKEY] = [
-    'title' => 'W$ Cloudinary',
+    'title' => 'W4 Cloudinary',
     'description' => 'W4 API implementation and support for Cloudinary.',
-    'version' => '1.0.0',
+    'version' => '1.0.1',
     'category' => 'fe',
     'constraints' => [
         'depends' => [
