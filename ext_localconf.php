@@ -1,6 +1,6 @@
 <?php
 
-defined('TYPO3_MODE') or die();
+defined('TYPO3') or die();
 
 ( function( $_EXTKEY) {
     $configuration = TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(
@@ -54,7 +54,7 @@ defined('TYPO3_MODE') or die();
         'description' => 'Upload images to Cloudinary',
     );
 
-    if (TYPO3_MODE === 'BE') {
+    if (TYPO3 === 'BE') {
         $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['extbase']['commandControllers'][] =
             \W4Services\W4Cloudinary\Command\CloudinaryCommandController::class;
     }

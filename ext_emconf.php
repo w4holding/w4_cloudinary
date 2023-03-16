@@ -3,7 +3,7 @@
 $EM_CONF[$_EXTKEY] = [
     'title' => 'W4 Cloudinary',
     'description' => 'W4 API implementation and support for Cloudinary.',
-    'version' => '1.0.1',
+    'version' => '1.0.2',
     'category' => 'fe',
     'constraints' => [
         'depends' => [

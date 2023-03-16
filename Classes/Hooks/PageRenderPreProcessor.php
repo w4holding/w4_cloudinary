@@ -16,7 +16,7 @@ class PageRenderPreProcessor {
     public function render_preProcess( array &$params, PageRenderer $pageRenderer) {
 
         if(
-            TYPO3_MODE !== 'BE'
+            TYPO3 !== 'BE'
          && !!$this->getConfiguration()['processing_responsive']
          && !$this->excludedByIp()
         ) {

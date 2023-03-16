@@ -1,7 +1,7 @@
 {
     "name": "w4services/w4_cloudinary",
     "type": "typo3-cms-extension",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "W4 API implementation and support for Cloudinary.",
     "homepage": "https://www.w-4.com",
     "repositories": [

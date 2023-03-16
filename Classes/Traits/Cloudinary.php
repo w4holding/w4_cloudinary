@@ -247,7 +247,7 @@ trait Cloudinary {
     protected function simplelog( string $message, int $code = 0) {
 
         if(
-            TYPO3_MODE == 'BE'
+            TYPO3 == 'BE'
       && !( $GLOBALS['BE_USER'] instanceof CommandLineUserAuthentication)
         ) {
 
